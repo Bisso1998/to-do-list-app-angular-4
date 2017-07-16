@@ -1,17 +1,23 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
 })
 export class AppComponent {
-  title = 'app';
-  obj = {
-  id: "1",
-  name: "bissobossz",
-  }
-  arr = ["bisso", "boss" ,"is", "awessome"];
-  isTrue = true;
-  myName = "biswarupd"
+items = ["Angular 4", "React", "vue"];
+newItem = "";
+pushItem = function () {
+if (this.newItem !=""){
+this.items.push(this.newItem);
+this.newItem = "";
+}
+}
+removeItem = function(index) {
+this.items.splice(index,1);
+
+}
+
+
 }
