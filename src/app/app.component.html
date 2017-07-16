@@ -1,31 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-
-<br>
-{{obj.name}}
-
-<ul>
-  <li *ngFor = "let i of arr">{{i}}</li>
-</ul>
-<br>
-<p *ngIf = "isTrue">  <li *ngFor = "let i of arr">{{i}}</li></p>
-<p  *ngIf = "myName == 'biswarup'; then firstTemp else secondTemp " >Great man!!!</p>
-<ng-template #firstTemp>This is 1st temp</ng-template>
-<ng-template #secondTemp>This is 2nd temp</ng-template>
-
-<br>
-<h3><a routerLink="/member">Member</a></h3>
-<br>
-<h3><a routerLink="/product">Product </a></h3>
-
-<!-- <app-product></app-product><br>
-<app-members></app-members> -->
-<br>
-<h3><a routerLink="/seller">Seller </a></h3>
-<br>
-<h2><router-outlet></router-outlet>
-</h2>
-<br>
-<br>
+<div class="main">
+  <h1>Item's name</h1>
+  <div class="addItem">
+    <input placeholder="Add Item..." class="addText">
+    <button type="button" name="button">Add</button>
+    <ul>
+      <li>
+          abc
+          <span>x</span>
+      </li>
+    </ul>
+  </div>
+</div>
